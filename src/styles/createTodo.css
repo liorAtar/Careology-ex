@@ -1,0 +1,23 @@
+.create-container {
+    width: 400px;
+    display: block;
+    padding: 0px;
+    margin: 2rem;
+}
+
+@media only screen and (max-width: 450px) {
+    .create-container {
+        width: -webkit-fill-available;
+        display: block;
+        padding: 1rem;
+        margin: auto;
+    }
+}
+
+.create-title {
+    margin-top: 0;
+}
+
+.create-btn {
+    width: -webkit-fill-available;
+}

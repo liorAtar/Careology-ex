@@ -1,0 +1,100 @@
+.todo-container {
+    width: 60%;
+    overflow: auto;
+    padding: 1rem;
+}
+
+.todo {
+    margin: 15px 0;
+    box-shadow: 1px 1px 20px #c8c1c1;
+    border-radius: 1rem;
+    padding: 1rem;
+    background-color: #f0f5fb;
+    transition: 0.4s;
+}
+
+.todo-completed {
+    background-color: #b3b3b3;
+}
+
+.todo:hover {
+    box-shadow: 2px 2px 20px #9b9696;
+}
+
+.todo-input {
+    border: 1px solid #d5dce4;
+    background-color: #e6ebf1;
+}
+
+.todo-input:hover {
+    background-color: #dde4ec;
+}
+
+.todoName {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.todoDescription {
+    margin-bottom: 0
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-end {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.buttonDelete {
+    height: 25px;
+    font-size: 12px;
+    padding: 0px;
+    color: black;
+    border: none;
+    background-color: transparent;
+    transition: 0.4s;
+}
+
+.buttonDelete:hover {
+    color: grey;
+    font-size: 20px;
+}
+
+.actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.buttonTodoAction {
+    background-color: #8ca4ab;
+    border: none;
+    box-shadow: 1px 2px 2px #63767b;
+    color: white;
+    outline: none;
+    font-size: 18px;
+    padding: 12px 0px;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+}
+
+.buttonTodoAction:hover {
+    background-color: #98bcc7;
+}
+
+@media only screen and (max-width: 450px) {
+    .todo-container {
+        width: -webkit-fill-available;
+        overflow: auto;
+        padding: 1rem;
+    }
+
+    .checkbox {
+        width: -webkit-fill-available;
+    }
+}

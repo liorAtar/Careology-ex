@@ -1,0 +1,46 @@
+.main-app {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-grow: 1;
+  overflow: auto;
+}
+
+@media only screen and (max-width: 450px) {
+  .container {
+    display: block;
+    width: 90%;
+    padding: 5%;
+  }
+}
+
+.input {
+  width: -webkit-fill-available;
+  border: none;
+  border-radius: 0.5em;
+  background-color: #ddd;
+  margin-bottom: 10px;
+  padding: 8px;
+  font-size: 18px;
+}
+
+.button {
+  color: white;
+  outline: none;
+  font-size: 18px;
+  padding: 12px 0px;
+  background-color: #8ca4ab;
+  border: none;
+  border-radius: 0.5rem;
+  box-shadow: 1px 2px 2px #63767b;
+}
+
+.button:hover {
+  background-color: #98bcc7;
+}
